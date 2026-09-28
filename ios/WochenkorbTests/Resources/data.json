@@ -1,0 +1,991 @@
+{
+ "stores": {
+  "aldi": {
+   "name": "Aldi",
+   "f": 0.93,
+   "bias": {
+    "trocken": 0.95,
+    "konserve": 0.96
+   }
+  },
+  "lidl": {
+   "name": "Lidl",
+   "f": 0.94,
+   "bias": {
+    "obst": 0.93,
+    "tk": 0.96
+   }
+  },
+  "penny": {
+   "name": "Penny",
+   "f": 0.96,
+   "bias": {
+    "kuehl": 0.95
+   }
+  },
+  "netto": {
+   "name": "Netto",
+   "f": 0.96,
+   "bias": {
+    "konserve": 0.94
+   }
+  },
+  "kaufland": {
+   "name": "Kaufland",
+   "f": 0.99,
+   "bias": {
+    "fleisch": 0.91,
+    "obst": 0.97
+   }
+  },
+  "rewe": {
+   "name": "Rewe",
+   "f": 1.11,
+   "bias": {
+    "obst": 0.96,
+    "kuehl": 0.97
+   }
+  },
+  "edeka": {
+   "name": "Edeka",
+   "f": 1.14,
+   "bias": {
+    "fleisch": 0.95
+   }
+  }
+ },
+ "cats": {
+  "obst": "Obst & Gemüse",
+  "kuehl": "Kühlregal",
+  "fleisch": "Fleisch & Fisch",
+  "trocken": "Nudeln, Reis & Co.",
+  "konserve": "Konserven & Gläser",
+  "tk": "Tiefkühl",
+  "vorrat": "Vorrat"
+ },
+ "catOrder": [
+  "obst",
+  "kuehl",
+  "fleisch",
+  "tk",
+  "trocken",
+  "konserve",
+  "vorrat"
+ ],
+ "ing": {
+  "spaghetti": {
+   "name": "Spaghetti",
+   "unit": "g",
+   "pk": 500,
+   "price": 0.99,
+   "cat": "trocken",
+   "tags": "glut",
+   "pkLabel": null
+  },
+  "penne": {
+   "name": "Penne",
+   "unit": "g",
+   "pk": 500,
+   "price": 0.99,
+   "cat": "trocken",
+   "tags": "glut",
+   "pkLabel": null
+  },
+  "reis": {
+   "name": "Langkornreis",
+   "unit": "g",
+   "pk": 1000,
+   "price": 1.79,
+   "cat": "trocken",
+   "tags": "",
+   "pkLabel": null
+  },
+  "couscous": {
+   "name": "Couscous",
+   "unit": "g",
+   "pk": 500,
+   "price": 1.49,
+   "cat": "trocken",
+   "tags": "glut",
+   "pkLabel": null
+  },
+  "linsen": {
+   "name": "Rote Linsen",
+   "unit": "g",
+   "pk": 500,
+   "price": 1.69,
+   "cat": "trocken",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "lasagne": {
+   "name": "Lasagneplatten",
+   "unit": "g",
+   "pk": 500,
+   "price": 1.19,
+   "cat": "trocken",
+   "tags": "glut",
+   "pkLabel": null
+  },
+  "wraps": {
+   "name": "Weizen-Wraps",
+   "unit": "Stk",
+   "pk": 6,
+   "price": 1.29,
+   "cat": "trocken",
+   "tags": "glut",
+   "pkLabel": "6 Stk"
+  },
+  "gnocchi": {
+   "name": "Gnocchi",
+   "unit": "g",
+   "pk": 500,
+   "price": 1.29,
+   "cat": "kuehl",
+   "tags": "glut",
+   "pkLabel": null
+  },
+  "kartoffeln": {
+   "name": "Kartoffeln, festkochend",
+   "unit": "g",
+   "pk": 2000,
+   "price": 2.49,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "suesskart": {
+   "name": "Süßkartoffeln",
+   "unit": "g",
+   "pk": 1000,
+   "price": 2.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "zwiebeln": {
+   "name": "Zwiebeln",
+   "unit": "g",
+   "pk": 1000,
+   "price": 1.29,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "knoblauch": {
+   "name": "Knoblauch",
+   "unit": "Zehe",
+   "pk": 30,
+   "price": 0.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": "3 Knollen"
+  },
+  "karotten": {
+   "name": "Karotten",
+   "unit": "g",
+   "pk": 1000,
+   "price": 1.19,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "zucchini": {
+   "name": "Zucchini",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 0.79,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "paprika": {
+   "name": "Paprika rot",
+   "unit": "Stk",
+   "pk": 3,
+   "price": 1.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": "3 Stk"
+  },
+  "brokkoli": {
+   "name": "Brokkoli",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 1.49,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "blumenkohl": {
+   "name": "Blumenkohl",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 1.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "kuerbis": {
+   "name": "Hokkaido-Kürbis",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 1.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "lauch": {
+   "name": "Lauch",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 0.89,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "gurke": {
+   "name": "Salatgurke",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 0.69,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "salat": {
+   "name": "Eisbergsalat",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 0.99,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "champignons": {
+   "name": "Champignons",
+   "unit": "g",
+   "pk": 250,
+   "price": 1.49,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "fzwiebel": {
+   "name": "Frühlingszwiebeln",
+   "unit": "Bund",
+   "pk": 1,
+   "price": 0.69,
+   "cat": "obst",
+   "tags": "",
+   "pkLabel": null
+  },
+  "avocado": {
+   "name": "Avocado",
+   "unit": "Stk",
+   "pk": 1,
+   "price": 0.99,
+   "cat": "obst",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "tomdose": {
+   "name": "Tomaten, gehackt",
+   "unit": "g",
+   "pk": 400,
+   "price": 0.65,
+   "cat": "konserve",
+   "tags": "hist",
+   "pkLabel": "Dose 400 g"
+  },
+  "tommark": {
+   "name": "Tomatenmark",
+   "unit": "g",
+   "pk": 200,
+   "price": 0.79,
+   "cat": "konserve",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "kicher": {
+   "name": "Kichererbsen",
+   "unit": "g",
+   "pk": 400,
+   "price": 0.89,
+   "cat": "konserve",
+   "tags": "hist",
+   "pkLabel": "Dose 400 g"
+  },
+  "kidney": {
+   "name": "Kidneybohnen",
+   "unit": "g",
+   "pk": 400,
+   "price": 0.79,
+   "cat": "konserve",
+   "tags": "hist",
+   "pkLabel": "Dose 400 g"
+  },
+  "mais": {
+   "name": "Mais",
+   "unit": "g",
+   "pk": 285,
+   "price": 0.89,
+   "cat": "konserve",
+   "tags": "",
+   "pkLabel": "Dose 285 g"
+  },
+  "kokos": {
+   "name": "Kokosmilch",
+   "unit": "ml",
+   "pk": 400,
+   "price": 1.29,
+   "cat": "konserve",
+   "tags": "",
+   "pkLabel": "Dose 400 ml"
+  },
+  "thunfisch": {
+   "name": "Thunfisch im eigenen Saft",
+   "unit": "g",
+   "pk": 150,
+   "price": 1.49,
+   "cat": "konserve",
+   "tags": "fisch hist",
+   "pkLabel": "Dose 150 g"
+  },
+  "soja": {
+   "name": "Sojasauce",
+   "unit": "ml",
+   "pk": 150,
+   "price": 1.49,
+   "cat": "konserve",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "sahne": {
+   "name": "Schlagsahne",
+   "unit": "ml",
+   "pk": 200,
+   "price": 0.79,
+   "cat": "kuehl",
+   "tags": "milch lakt",
+   "pkLabel": null
+  },
+  "milch": {
+   "name": "Milch 1,5 %",
+   "unit": "ml",
+   "pk": 1000,
+   "price": 1.09,
+   "cat": "kuehl",
+   "tags": "milch lakt",
+   "pkLabel": null
+  },
+  "butter": {
+   "name": "Butter",
+   "unit": "g",
+   "pk": 250,
+   "price": 2.29,
+   "cat": "kuehl",
+   "tags": "milch",
+   "pkLabel": null
+  },
+  "eier": {
+   "name": "Eier, Freilandhaltung",
+   "unit": "Stk",
+   "pk": 10,
+   "price": 2.99,
+   "cat": "kuehl",
+   "tags": "ei",
+   "pkLabel": "10 Stk"
+  },
+  "mozzarella": {
+   "name": "Mozzarella",
+   "unit": "g",
+   "pk": 125,
+   "price": 0.89,
+   "cat": "kuehl",
+   "tags": "milch lakt",
+   "pkLabel": null
+  },
+  "parmesan": {
+   "name": "Grana Padano, gerieben",
+   "unit": "g",
+   "pk": 100,
+   "price": 1.79,
+   "cat": "kuehl",
+   "tags": "milch hist",
+   "pkLabel": null
+  },
+  "gouda": {
+   "name": "Gouda, gerieben",
+   "unit": "g",
+   "pk": 200,
+   "price": 1.79,
+   "cat": "kuehl",
+   "tags": "milch hist",
+   "pkLabel": null
+  },
+  "feta": {
+   "name": "Feta",
+   "unit": "g",
+   "pk": 200,
+   "price": 1.49,
+   "cat": "kuehl",
+   "tags": "milch lakt hist",
+   "pkLabel": null
+  },
+  "frischkaese": {
+   "name": "Frischkäse",
+   "unit": "g",
+   "pk": 200,
+   "price": 0.99,
+   "cat": "kuehl",
+   "tags": "milch lakt",
+   "pkLabel": null
+  },
+  "quark": {
+   "name": "Speisequark",
+   "unit": "g",
+   "pk": 500,
+   "price": 1.29,
+   "cat": "kuehl",
+   "tags": "milch lakt",
+   "pkLabel": null
+  },
+  "tofu": {
+   "name": "Tofu natur",
+   "unit": "g",
+   "pk": 400,
+   "price": 1.99,
+   "cat": "kuehl",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "haehnchen": {
+   "name": "Hähnchenbrustfilet",
+   "unit": "g",
+   "pk": 400,
+   "price": 4.49,
+   "cat": "fleisch",
+   "tags": "fleisch",
+   "pkLabel": null
+  },
+  "pute": {
+   "name": "Putenschnitzel",
+   "unit": "g",
+   "pk": 400,
+   "price": 4.79,
+   "cat": "fleisch",
+   "tags": "fleisch",
+   "pkLabel": null
+  },
+  "rinderhack": {
+   "name": "Rinderhackfleisch",
+   "unit": "g",
+   "pk": 500,
+   "price": 5.49,
+   "cat": "fleisch",
+   "tags": "fleisch hist",
+   "pkLabel": null
+  },
+  "hack": {
+   "name": "Hackfleisch, gemischt",
+   "unit": "g",
+   "pk": 500,
+   "price": 3.99,
+   "cat": "fleisch",
+   "tags": "fleisch hist",
+   "pkLabel": null
+  },
+  "schwein": {
+   "name": "Schweineschnitzel",
+   "unit": "g",
+   "pk": 500,
+   "price": 4.99,
+   "cat": "fleisch",
+   "tags": "fleisch",
+   "pkLabel": null
+  },
+  "speck": {
+   "name": "Speckwürfel",
+   "unit": "g",
+   "pk": 125,
+   "price": 1.29,
+   "cat": "fleisch",
+   "tags": "fleisch hist",
+   "pkLabel": null
+  },
+  "lachs": {
+   "name": "Lachsfilet, tiefgekühlt",
+   "unit": "g",
+   "pk": 250,
+   "price": 3.99,
+   "cat": "tk",
+   "tags": "fisch",
+   "pkLabel": null
+  },
+  "spinat": {
+   "name": "Blattspinat, tiefgekühlt",
+   "unit": "g",
+   "pk": 450,
+   "price": 1.29,
+   "cat": "tk",
+   "tags": "hist",
+   "pkLabel": null
+  },
+  "erbsen": {
+   "name": "Erbsen, tiefgekühlt",
+   "unit": "g",
+   "pk": 1000,
+   "price": 1.99,
+   "cat": "tk",
+   "tags": "",
+   "pkLabel": null
+  },
+  "oel": {
+   "name": "Rapsöl",
+   "unit": "ml",
+   "pk": 1000,
+   "price": 2.29,
+   "cat": "vorrat",
+   "tags": "basic",
+   "pkLabel": null
+  },
+  "bruehe": {
+   "name": "Gemüsebrühe, Pulver",
+   "unit": "g",
+   "pk": 250,
+   "price": 1.29,
+   "cat": "vorrat",
+   "tags": "basic",
+   "pkLabel": null
+  },
+  "mehl": {
+   "name": "Weizenmehl",
+   "unit": "g",
+   "pk": 1000,
+   "price": 0.69,
+   "cat": "vorrat",
+   "tags": "basic glut",
+   "pkLabel": null
+  }
+ },
+ "recipes": [
+  {
+   "id": "bolo",
+   "name": "Spaghetti Bolognese",
+   "min": 35,
+   "ing": {
+    "spaghetti": 125,
+    "rinderhack": 125,
+    "tomdose": 200,
+    "zwiebeln": 50,
+    "karotten": 50,
+    "knoblauch": 1,
+    "tommark": 20,
+    "parmesan": 15,
+    "oel": 10
+   },
+   "steps": "Zwiebel, Karotte und Knoblauch fein würfeln und anbraten. Hack krümelig braten, Tomatenmark kurz mitrösten, Tomaten dazu und 20 Minuten köcheln lassen. Mit Spaghetti und Käse servieren."
+  },
+  {
+   "id": "hcurry",
+   "name": "Hähnchen-Curry mit Reis",
+   "min": 30,
+   "ing": {
+    "haehnchen": 150,
+    "reis": 80,
+    "kokos": 100,
+    "paprika": 0.5,
+    "zwiebeln": 50,
+    "brokkoli": 0.25,
+    "oel": 10
+   },
+   "steps": "Reis kochen. Hähnchen in Stücke schneiden und anbraten, Zwiebel, Paprika und Brokkoli dazu. Mit Currypulver bestäuben, Kokosmilch angießen und 10 Minuten köcheln."
+  },
+  {
+   "id": "kzpfanne",
+   "name": "Kartoffel-Zucchini-Pfanne mit Kräuterquark",
+   "min": 30,
+   "ing": {
+    "kartoffeln": 300,
+    "zucchini": 0.5,
+    "zwiebeln": 40,
+    "quark": 125,
+    "oel": 15
+   },
+   "steps": "Kartoffeln würfeln und goldbraun braten, Zucchini und Zwiebel die letzten 8 Minuten mitbraten. Quark mit Salz, Pfeffer und Kräutern verrühren und dazu reichen."
+  },
+  {
+   "id": "kuerbis",
+   "name": "Kürbissuppe mit Kokos",
+   "min": 35,
+   "ing": {
+    "kuerbis": 0.33,
+    "karotten": 100,
+    "kartoffeln": 100,
+    "zwiebeln": 40,
+    "kokos": 100,
+    "bruehe": 6,
+    "oel": 5
+   },
+   "steps": "Kürbis (mit Schale), Karotten, Kartoffeln und Zwiebel würfeln, andünsten und mit Brühe bedecken. 20 Minuten kochen, Kokosmilch dazu und fein pürieren."
+  },
+  {
+   "id": "chilisin",
+   "name": "Chili sin Carne mit Reis",
+   "min": 35,
+   "ing": {
+    "kidney": 130,
+    "mais": 95,
+    "tomdose": 200,
+    "paprika": 0.5,
+    "zwiebeln": 50,
+    "knoblauch": 1,
+    "reis": 70,
+    "oel": 10
+   },
+   "steps": "Zwiebel, Knoblauch und Paprika anbraten. Tomaten, abgespülte Bohnen und Mais dazu, mit Kreuzkümmel und Paprikapulver würzen und 20 Minuten köcheln. Mit Reis servieren."
+  },
+  {
+   "id": "chilicon",
+   "name": "Chili con Carne mit Reis",
+   "min": 40,
+   "ing": {
+    "rinderhack": 125,
+    "kidney": 130,
+    "mais": 95,
+    "tomdose": 200,
+    "zwiebeln": 50,
+    "knoblauch": 1,
+    "reis": 70,
+    "oel": 10
+   },
+   "steps": "Hack krümelig anbraten, Zwiebel und Knoblauch dazu. Tomaten, Bohnen und Mais einrühren, kräftig würzen und 25 Minuten köcheln. Mit Reis servieren."
+  },
+  {
+   "id": "dal",
+   "name": "Rotes Linsen-Dal mit Reis",
+   "min": 30,
+   "ing": {
+    "linsen": 80,
+    "kokos": 100,
+    "tomdose": 100,
+    "zwiebeln": 40,
+    "knoblauch": 1,
+    "reis": 70,
+    "oel": 10
+   },
+   "steps": "Zwiebel und Knoblauch anschwitzen, Currypulver kurz mitrösten. Linsen, Tomaten, Kokosmilch und 200 ml Wasser dazu und 15 Minuten sämig köcheln. Mit Reis servieren."
+  },
+  {
+   "id": "lachs",
+   "name": "Ofenlachs mit Kartoffeln und Brokkoli",
+   "min": 35,
+   "ing": {
+    "lachs": 125,
+    "kartoffeln": 250,
+    "brokkoli": 0.4,
+    "butter": 10,
+    "oel": 10
+   },
+   "steps": "Kartoffeln halbieren, mit Öl bei 200 °C 15 Minuten backen. Lachs und Brokkoli dazulegen, Butterflocken darauf und weitere 15 Minuten garen."
+  },
+  {
+   "id": "gnocchi",
+   "name": "Gnocchi-Pfanne mit Spinat und Feta",
+   "min": 20,
+   "ing": {
+    "gnocchi": 250,
+    "spinat": 150,
+    "feta": 50,
+    "zwiebeln": 30,
+    "knoblauch": 1,
+    "oel": 10
+   },
+   "steps": "Gnocchi in Öl knusprig braten. Zwiebel und Knoblauch dazu, aufgetauten Spinat unterheben und heiß werden lassen. Feta darüberbröseln."
+  },
+  {
+   "id": "lasagne",
+   "name": "Lasagne Bolognese",
+   "min": 70,
+   "ing": {
+    "lasagne": 80,
+    "hack": 125,
+    "tomdose": 200,
+    "zwiebeln": 40,
+    "milch": 150,
+    "butter": 15,
+    "mehl": 15,
+    "gouda": 40,
+    "oel": 5
+   },
+   "steps": "Hack mit Zwiebel anbraten, Tomaten dazu und 15 Minuten köcheln. Aus Butter, Mehl und Milch eine Béchamel rühren. Abwechselnd schichten, mit Käse bestreuen und 35 Minuten bei 180 °C backen."
+  },
+  {
+   "id": "brokkolipasta",
+   "name": "Brokkoli-Sahne-Penne",
+   "min": 25,
+   "ing": {
+    "penne": 125,
+    "brokkoli": 0.5,
+    "sahne": 70,
+    "frischkaese": 30,
+    "knoblauch": 1,
+    "oel": 5
+   },
+   "steps": "Penne kochen, Brokkoliröschen die letzten 4 Minuten mitgaren. Knoblauch in Öl anschwitzen, Sahne und Frischkäse einrühren, alles mischen und pfeffern."
+  },
+  {
+   "id": "wraps",
+   "name": "Hähnchen-Wraps mit Gurke",
+   "min": 25,
+   "ing": {
+    "wraps": 2,
+    "haehnchen": 120,
+    "paprika": 0.33,
+    "gurke": 0.25,
+    "salat": 0.15,
+    "frischkaese": 30,
+    "oel": 5
+   },
+   "steps": "Hähnchen in Streifen braten und würzen. Wraps kurz erwärmen, mit Frischkäse bestreichen und mit Salat, Gurke, Paprika und Hähnchen füllen."
+  },
+  {
+   "id": "bratreis",
+   "name": "Gebratener Reis mit Gemüse und Ei",
+   "min": 25,
+   "ing": {
+    "reis": 80,
+    "erbsen": 60,
+    "karotten": 70,
+    "eier": 1.5,
+    "fzwiebel": 0.3,
+    "oel": 10
+   },
+   "steps": "Reis kochen und abkühlen lassen (am besten vom Vortag). Karotten und Erbsen anbraten, Reis dazu und knusprig braten. Eier unterrühren, mit Frühlingszwiebeln bestreuen."
+  },
+  {
+   "id": "tofu",
+   "name": "Tofu-Gemüse-Pfanne mit Reis",
+   "min": 30,
+   "ing": {
+    "tofu": 130,
+    "brokkoli": 0.3,
+    "paprika": 0.5,
+    "soja": 15,
+    "reis": 80,
+    "knoblauch": 1,
+    "oel": 15
+   },
+   "steps": "Tofu würfeln und rundum knusprig braten. Brokkoli, Paprika und Knoblauch mitbraten, mit Sojasauce ablöschen. Mit Reis servieren."
+  },
+  {
+   "id": "kichercurry",
+   "name": "Kichererbsen-Spinat-Curry",
+   "min": 30,
+   "ing": {
+    "kicher": 130,
+    "kokos": 100,
+    "spinat": 80,
+    "tomdose": 100,
+    "zwiebeln": 40,
+    "reis": 70,
+    "oel": 10
+   },
+   "steps": "Zwiebel anbraten, Currypulver kurz mitrösten. Kichererbsen, Tomaten, Kokosmilch und Spinat dazu und 15 Minuten köcheln. Mit Reis servieren."
+  },
+  {
+   "id": "kartspeck",
+   "name": "Kartoffelsuppe mit Speck",
+   "min": 40,
+   "ing": {
+    "kartoffeln": 300,
+    "karotten": 60,
+    "lauch": 0.3,
+    "speck": 40,
+    "bruehe": 6,
+    "oel": 5
+   },
+   "steps": "Speck auslassen, Lauch und Karotten kurz mitdünsten. Gewürfelte Kartoffeln und Brühe dazu, 20 Minuten kochen und grob stampfen."
+  },
+  {
+   "id": "kartlauch",
+   "name": "Kartoffel-Lauch-Suppe",
+   "min": 35,
+   "ing": {
+    "kartoffeln": 300,
+    "lauch": 0.4,
+    "karotten": 60,
+    "zwiebeln": 30,
+    "bruehe": 6,
+    "oel": 10
+   },
+   "steps": "Zwiebel und Lauch in Öl dünsten, Kartoffeln und Karotten dazu. Mit Brühe bedecken, 20 Minuten kochen und halb pürieren. Mit Muskat abschmecken."
+  },
+  {
+   "id": "schnitzel",
+   "name": "Schweineschnitzel mit Bratkartoffeln und Gurkensalat",
+   "min": 35,
+   "ing": {
+    "schwein": 150,
+    "kartoffeln": 300,
+    "gurke": 0.5,
+    "zwiebeln": 30,
+    "oel": 20
+   },
+   "steps": "Kartoffeln vorkochen, in Scheiben mit Zwiebeln goldbraun braten. Schnitzel von beiden Seiten 3 Minuten braten. Gurke hobeln, mit Öl, Salz und Dill anmachen."
+  },
+  {
+   "id": "shakshuka",
+   "name": "Shakshuka mit Feta",
+   "min": 25,
+   "ing": {
+    "eier": 2,
+    "tomdose": 200,
+    "paprika": 0.5,
+    "zwiebeln": 40,
+    "feta": 30,
+    "oel": 10
+   },
+   "steps": "Zwiebel und Paprika weich dünsten, Tomaten dazu und mit Kreuzkümmel würzen. Mulden formen, Eier hineinschlagen und zugedeckt stocken lassen. Feta darüber."
+  },
+  {
+   "id": "ofengemuese",
+   "name": "Ofengemüse mit Feta und Couscous",
+   "min": 40,
+   "ing": {
+    "couscous": 70,
+    "suesskart": 150,
+    "zucchini": 0.5,
+    "paprika": 0.5,
+    "zwiebeln": 40,
+    "feta": 50,
+    "oel": 15
+   },
+   "steps": "Gemüse würfeln, mit Öl und Gewürzen bei 200 °C 25 Minuten rösten, Feta die letzten 10 Minuten dazu. Couscous mit kochendem Wasser übergießen und 5 Minuten quellen lassen."
+  },
+  {
+   "id": "pilzrahm",
+   "name": "Champignon-Rahm mit Reis",
+   "min": 25,
+   "ing": {
+    "champignons": 150,
+    "sahne": 60,
+    "zwiebeln": 30,
+    "reis": 80,
+    "oel": 10
+   },
+   "steps": "Reis kochen. Champignons in Scheiben kräftig anbraten, Zwiebel dazu, mit Sahne ablöschen und kurz einkochen. Mit Petersilie servieren."
+  },
+  {
+   "id": "haehnchenreis",
+   "name": "Hähnchen-Reis-Pfanne mit Erbsen",
+   "min": 30,
+   "ing": {
+    "haehnchen": 150,
+    "reis": 80,
+    "erbsen": 70,
+    "karotten": 70,
+    "zwiebeln": 30,
+    "oel": 10
+   },
+   "steps": "Reis kochen. Hähnchen würfeln und anbraten, Zwiebel, Karotten und Erbsen dazu. Reis unterheben und mit Paprikapulver würzen."
+  },
+  {
+   "id": "thunpasta",
+   "name": "Thunfisch-Tomaten-Pasta",
+   "min": 20,
+   "ing": {
+    "spaghetti": 125,
+    "thunfisch": 75,
+    "tomdose": 150,
+    "zwiebeln": 30,
+    "knoblauch": 1,
+    "oel": 10
+   },
+   "steps": "Zwiebel und Knoblauch anschwitzen, Tomaten dazu und 10 Minuten köcheln. Thunfisch unterheben, mit Oregano würzen und mit den Spaghetti mischen."
+  },
+  {
+   "id": "gratin",
+   "name": "Blumenkohl-Kartoffel-Gratin",
+   "min": 55,
+   "ing": {
+    "blumenkohl": 0.35,
+    "kartoffeln": 200,
+    "sahne": 70,
+    "milch": 50,
+    "mozzarella": 60,
+    "oel": 3
+   },
+   "steps": "Kartoffeln in Scheiben und Blumenkohlröschen 5 Minuten vorkochen. In eine Form schichten, Sahne und Milch würzen und darübergießen, Mozzarella darauf und 30 Minuten bei 190 °C backen."
+  },
+  {
+   "id": "bowlkicher",
+   "name": "Süßkartoffel-Kichererbsen-Bowl",
+   "min": 35,
+   "ing": {
+    "suesskart": 200,
+    "kicher": 130,
+    "salat": 0.2,
+    "gurke": 0.25,
+    "avocado": 0.5,
+    "oel": 15
+   },
+   "steps": "Süßkartoffel und Kichererbsen mit Öl und Paprikapulver 25 Minuten bei 200 °C rösten. Mit Salat, Gurke und Avocado in Schalen anrichten."
+  },
+  {
+   "id": "bowlbrokkoli",
+   "name": "Süßkartoffel-Brokkoli-Bowl mit Reis",
+   "min": 35,
+   "ing": {
+    "suesskart": 200,
+    "brokkoli": 0.3,
+    "reis": 70,
+    "gurke": 0.25,
+    "oel": 15
+   },
+   "steps": "Süßkartoffel würfeln und 25 Minuten rösten, Brokkoli die letzten 10 Minuten dazu. Mit Reis und Gurkenscheiben anrichten, mit Öl, Salz und Kräutern beträufeln."
+  },
+  {
+   "id": "kokosgemuese",
+   "name": "Kokos-Gemüsecurry mit Reis",
+   "min": 30,
+   "ing": {
+    "kokos": 100,
+    "blumenkohl": 0.25,
+    "karotten": 70,
+    "zucchini": 0.3,
+    "zwiebeln": 30,
+    "reis": 70,
+    "oel": 10
+   },
+   "steps": "Zwiebel anbraten, Currypulver mitrösten. Blumenkohl und Karotten dazu, Kokosmilch und etwas Wasser angießen und 10 Minuten köcheln, Zucchini die letzten 5 Minuten."
+  },
+  {
+   "id": "putenrahm",
+   "name": "Putengeschnetzeltes in Rahmsoße",
+   "min": 30,
+   "ing": {
+    "pute": 150,
+    "champignons": 100,
+    "sahne": 60,
+    "zwiebeln": 30,
+    "reis": 80,
+    "oel": 10
+   },
+   "steps": "Reis kochen. Pute in Streifen scharf anbraten und herausnehmen. Champignons und Zwiebel braten, Sahne dazu, Fleisch zurück in die Pfanne und kurz ziehen lassen."
+  },
+  {
+   "id": "hofen",
+   "name": "Hähnchen mit Ofenkartoffeln und Karotten",
+   "min": 45,
+   "ing": {
+    "haehnchen": 150,
+    "kartoffeln": 250,
+    "karotten": 120,
+    "oel": 20
+   },
+   "steps": "Kartoffeln und Karotten in Spalten schneiden, mit Öl und Rosmarin 20 Minuten bei 200 °C backen. Gewürztes Hähnchen dazulegen und weitere 20 Minuten garen."
+  }
+ ]
+}

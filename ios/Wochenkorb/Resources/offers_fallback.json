@@ -1,0 +1,97 @@
+{
+  "kw": "2026-KW40",
+  "stand": "2026-09-28",
+  "ort": "Münster (48145)",
+  "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Lidl und Netto fehlen (Recherche abgebrochen).",
+  "stores": {
+    "aldi": {
+      "name": "Aldi Nord",
+      "validFrom": "2026-09-28", "validTo": "2026-10-02",
+      "status": "teilweise",
+      "source": "https://www.aldi-nord.de/angebote.html",
+      "items": {
+        "gurke":      {"product": "Gurke", "price": 0.49, "pk": 1, "label": "Stück"},
+        "fzwiebel":   {"product": "Lauchzwiebeln", "price": 0.39, "pk": 1, "label": "Bund"},
+        "lauch":      {"product": "Porree", "price": 0.49, "pk": 1, "label": "Stück"},
+        "kartoffeln": {"product": "Speisekartoffeln", "price": 2.99, "pk": 5000, "label": "5-kg-Netz"},
+        "zwiebeln":   {"product": "Zwiebeln", "price": 2.99, "pk": 5000, "label": "5-kg-Sack"},
+        "butter":     {"product": "Kerrygold Butter", "price": 1.59, "pk": 250, "label": "250 g"},
+        "soja":       {"product": "Kikkoman Sojasauce", "price": 4.99, "pk": 500, "label": "500 ml"},
+        "spaghetti":  {"product": "Cucina Spaghetti XXL", "price": 1.19, "pk": 1000, "label": "1 kg"},
+        "penne":      {"product": "Cucina Penne XXL", "price": 1.19, "pk": 1000, "label": "1 kg"},
+        "reis":       {"product": "Bon-Ri Basmati-Reis XXL", "price": 4.49, "pk": 2000, "label": "2 kg"},
+        "gouda":      {"product": "Milsani Gouda XXL", "price": 2.99, "pk": 600, "label": "600-g-Stück", "note": "am Stück"},
+        "thunfisch":  {"product": "Golden Seafood Thunfischfilets XXL", "price": 4.44, "pk": 600, "label": "4 Dosen, 600 g abgetropft"},
+        "feta":       {"product": "Gazi Schaf-/Ziegenkäse", "price": 1.79, "pk": 150, "label": "150 g"},
+        "milch":      {"product": "Weihenstephan H-Milch", "price": 0.99, "pk": 1000, "label": "1 l"},
+        "haehnchen":  {"product": "Hähnchen-Innenfilets", "price": 5.69, "pk": 600, "label": "600 g"},
+        "rinderhack": {"product": "Black-Angus-Rinderhack XXL", "price": 6.99, "pk": 600, "label": "600 g"},
+        "lachs":      {"product": "Golden Seafood Lachsfilet, gekühlt", "price": 4.79, "pk": 300, "label": "300 g"}
+      }
+    },
+    "penny": {
+      "name": "Penny",
+      "validFrom": "2026-09-28", "validTo": "2026-10-03",
+      "status": "teilweise",
+      "source": "https://www.penny.de/angebote",
+      "items": {
+        "salat":      {"product": "Deutscher Eisbergsalat", "price": 0.77, "pk": 1, "label": "Stück"},
+        "kartoffeln": {"product": "Deutsche Speisekartoffeln", "price": 4.44, "pk": 7500, "label": "7,5-kg-Sack"},
+        "lauch":      {"product": "Porree", "price": 0.49, "pk": 1, "label": "Stück"},
+        "milch":      {"product": "Weihenstephan H-Milch", "price": 0.99, "pk": 1000, "label": "1 l", "note": "mit App 0,88 €"}
+      }
+    },
+    "kaufland": {
+      "name": "Kaufland",
+      "validFrom": "2026-09-28", "validTo": "2026-10-04",
+      "status": "teilweise, nur Markenaktionen (Frischeprospekt nur als Bild)",
+      "source": "https://www.aktionspreis.de/prospekt/kaufland-angebote/muenster",
+      "items": {
+        "spaghetti":  {"product": "Barilla Spaghetti", "price": 1.00, "pk": 500, "label": "500 g", "note": "ab-Preis"},
+        "penne":      {"product": "Barilla Penne", "price": 1.00, "pk": 500, "label": "500 g", "note": "ab-Preis"},
+        "butter":     {"product": "Kerrygold Vorteilspack", "price": 1.99, "pk": 400, "label": "400 g"},
+        "mozzarella": {"product": "Zott Zottarella Minis", "price": 1.69, "pk": 125, "label": "125 g"},
+        "tomdose":    {"product": "Oro Di Parma Tomaten", "price": 1.00, "pk": 400, "label": "Dose 400 g"}
+      }
+    },
+    "rewe": {
+      "name": "Rewe",
+      "market": "Rewe Wolbecker Str. 44, Münster",
+      "validFrom": "2026-09-28", "validTo": "2026-10-04",
+      "status": "teilweise, rewe.de blockiert automatischen Zugriff",
+      "source": "https://www.aktionspreis.de/prospekt/rewe-angebote/muenster",
+      "items": {
+        "milch":      {"product": "Weihenstephan H-Milch", "price": 1.11, "pk": 1000, "label": "1 l"}
+      }
+    },
+    "edeka": {
+      "name": "Edeka",
+      "market": "Edeka Hafenmarkt, Hansaring 52, 48155 Münster (Stroetmann)",
+      "validFrom": "2026-09-28", "validTo": "2026-10-03",
+      "status": "teilweise",
+      "source": "https://www.edeka.de/maerkte/074952/prospekte/",
+      "items": {
+        "salat":       {"product": "Eisbergsalat", "price": 1.11, "pk": 1, "label": "Stück"},
+        "brokkoli":    {"product": "Broccoli", "price": 1.49, "pk": 1, "label": "400 g"},
+        "karotten":    {"product": "Möhren", "price": 0.99, "pk": 1000, "label": "1 kg"},
+        "kuerbis":     {"product": "Bio Hokkaido", "price": 1.49, "pk": 1, "label": "je kg, ca. 1 Stück", "note": "Kilopreis"},
+        "zwiebeln":    {"product": "Zwiebeln aus dem Münsterland", "price": 1.49, "pk": 2000, "label": "2 kg"},
+        "kartoffeln":  {"product": "Speisekartoffeln festkochend", "price": 4.44, "pk": 7500, "label": "7,5-kg-Sack"},
+        "champignons": {"product": "Champignons weiß", "price": 1.79, "pk": 300, "label": "300 g"},
+        "suesskart":   {"product": "Süßkartoffeln", "price": 2.99, "pk": 1000, "label": "1 kg"},
+        "lauch":       {"product": "Porree", "price": 1.99, "pk": 3, "label": "1 kg, ca. 3 Stangen", "note": "Kilopreis"},
+        "gurke":       {"product": "Gurke", "price": 0.59, "pk": 1, "label": "Stück"},
+        "frischkaese": {"product": "Arla Buko", "price": 0.88, "pk": 200, "label": "200 g"},
+        "thunfisch":   {"product": "Saupiquet Thunfischstücke", "price": 2.49, "pk": 185, "label": "Dose 185 g"},
+        "oel":         {"product": "Rapsgold Rapsöl", "price": 2.99, "pk": 750, "label": "750 ml"},
+        "feta":        {"product": "Greco Feta", "price": 2.49, "pk": 150, "label": "150 g"},
+        "butter":      {"product": "Meggle Butter", "price": 1.29, "pk": 250, "label": "250 g"},
+        "mehl":        {"product": "Gut & Günstig Weizenmehl 405", "price": 0.59, "pk": 1000, "label": "1 kg"},
+        "spaghetti":   {"product": "Barilla Pasta", "price": 1.69, "pk": 1000, "label": "1 kg"},
+        "penne":       {"product": "Barilla Pasta", "price": 1.69, "pk": 1000, "label": "1 kg"},
+        "reis":        {"product": "Ben's Original Langkornreis", "price": 1.79, "pk": 500, "label": "500 g", "note": "nur mit App", "app": true},
+        "blumenkohl":  {"product": "Blumenkohl", "price": 1.00, "pk": 1, "label": "Stück", "note": "nur Do/Fr"}
+      }
+    }
+  }
+}

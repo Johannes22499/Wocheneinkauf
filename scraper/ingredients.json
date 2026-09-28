@@ -1,0 +1,1138 @@
+{
+  "spaghetti": {
+    "name": "Spaghetti",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 0.99,
+    "category": "trocken",
+    "tags": [
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "spaghetti"
+    ],
+    "exclude": [
+      "eis",
+      "haribo",
+      "balla-stixx",
+      "balla stixx",
+      "lakritz",
+      "tomatensauce",
+      "fertiggericht",
+      "dose",
+      "sauce",
+      "soße",
+      "glas"
+    ]
+  },
+  "penne": {
+    "name": "Penne",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 0.99,
+    "category": "trocken",
+    "tags": [
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "penne",
+      "rigate"
+    ],
+    "exclude": [
+      "tomatensauce",
+      "fertiggericht",
+      "dose",
+      "sauce",
+      "soße",
+      "glas"
+    ]
+  },
+  "reis": {
+    "name": "Langkornreis",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 1.79,
+    "category": "trocken",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "reis",
+      "basmati",
+      "langkornreis",
+      "jasminreis",
+      "risotto"
+    ],
+    "exclude": [
+      "milchreis",
+      "reiswaffel",
+      "reisflocken",
+      "reiscracker",
+      "reisdrink",
+      "reisgetränk",
+      "reisbrei",
+      "reisnudeln",
+      "reis-nudeln"
+    ]
+  },
+  "couscous": {
+    "name": "Couscous",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 1.49,
+    "category": "trocken",
+    "tags": [
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "couscous"
+    ],
+    "exclude": []
+  },
+  "linsen": {
+    "name": "Rote Linsen",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 1.69,
+    "category": "trocken",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "linsen"
+    ],
+    "exclude": [
+      "linsensuppe",
+      "linsenchips",
+      "linsennudel"
+    ]
+  },
+  "lasagne": {
+    "name": "Lasagneplatten",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 1.19,
+    "category": "trocken",
+    "tags": [
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "lasagneplatten",
+      "lasagne blätter",
+      "lasagneblätter"
+    ],
+    "exclude": [
+      "lasagne bolognese",
+      "fertiglasagne",
+      "tiefkühllasagne"
+    ]
+  },
+  "wraps": {
+    "name": "Weizen-Wraps",
+    "unit": "Stk",
+    "pack": 6,
+    "basePrice": 1.29,
+    "category": "trocken",
+    "tags": [
+      "glut"
+    ],
+    "packName": "6 Stk",
+    "match": [
+      "wraps",
+      "tortilla",
+      "tortillas"
+    ],
+    "exclude": [
+      "wrapfolie",
+      "tortilla-chips",
+      "tortillachips",
+      "chips"
+    ]
+  },
+  "gnocchi": {
+    "name": "Gnocchi",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 1.29,
+    "category": "kuehl",
+    "tags": [
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "gnocchi"
+    ],
+    "exclude": []
+  },
+  "kartoffeln": {
+    "name": "Kartoffeln, festkochend",
+    "unit": "g",
+    "pack": 2000,
+    "basePrice": 2.49,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "kartoffeln",
+      "speisekartoffeln",
+      "kartoffel"
+    ],
+    "exclude": [
+      "kartoffelchips",
+      "kartoffelsalat",
+      "kartoffelpüree",
+      "kartoffelknödel",
+      "kartoffelsuppe",
+      "kartoffelecken",
+      "kartoffelpuffer",
+      "süßkartoffel",
+      "süßkartoffeln"
+    ]
+  },
+  "suesskart": {
+    "name": "Süßkartoffeln",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 2.99,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "süßkartoffel",
+      "süßkartoffeln",
+      "batate",
+      "bataten"
+    ],
+    "exclude": [
+      "süßkartoffelchips",
+      "süßkartoffelpommes"
+    ]
+  },
+  "zwiebeln": {
+    "name": "Zwiebeln",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 1.29,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "zwiebeln",
+      "zwiebel"
+    ],
+    "exclude": [
+      "frühlingszwiebel",
+      "frühlingszwiebeln",
+      "zwiebelmettwurst",
+      "zwiebelringe",
+      "zwiebelsuppe",
+      "zwiebelmarmelade",
+      "röstzwiebel",
+      "zwiebelbrot",
+      "lauchzwiebel"
+    ]
+  },
+  "knoblauch": {
+    "name": "Knoblauch",
+    "unit": "Zehe",
+    "pack": 30,
+    "basePrice": 0.99,
+    "category": "obst",
+    "tags": [],
+    "packName": "3 Knollen",
+    "match": [
+      "knoblauch"
+    ],
+    "exclude": [
+      "knoblauchbrot",
+      "knoblauchbaguette",
+      "knoblauchbutter",
+      "knoblauchsauce",
+      "knoblauchsoße",
+      "knoblauchdip",
+      "knoblauchsalz"
+    ]
+  },
+  "karotten": {
+    "name": "Karotten",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 1.19,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "karotten",
+      "möhren",
+      "möhre"
+    ],
+    "exclude": [
+      "karottensaft",
+      "möhrensaft",
+      "karottensalat"
+    ]
+  },
+  "zucchini": {
+    "name": "Zucchini",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 0.79,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "zucchini"
+    ],
+    "exclude": [
+      "zucchinichips"
+    ]
+  },
+  "paprika": {
+    "name": "Paprika rot",
+    "unit": "Stk",
+    "pack": 3,
+    "basePrice": 1.99,
+    "category": "obst",
+    "tags": [],
+    "packName": "3 Stk",
+    "match": [
+      "paprika"
+    ],
+    "exclude": [
+      "paprikachips",
+      "paprikapulver",
+      "paprikagewürz",
+      "paprikasalami",
+      "paprikacreme",
+      "paprikasauce"
+    ]
+  },
+  "brokkoli": {
+    "name": "Brokkoli",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 1.49,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "brokkoli",
+      "broccoli"
+    ],
+    "exclude": []
+  },
+  "blumenkohl": {
+    "name": "Blumenkohl",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 1.99,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "blumenkohl"
+    ],
+    "exclude": [
+      "blumenkohlreis"
+    ]
+  },
+  "kuerbis": {
+    "name": "Hokkaido-Kürbis",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 1.99,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "hokkaido",
+      "kürbis"
+    ],
+    "exclude": [
+      "kürbiskern",
+      "kürbiskernöl",
+      "kürbissuppe",
+      "kürbisbrot"
+    ]
+  },
+  "lauch": {
+    "name": "Lauch",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 0.89,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "lauch",
+      "porree"
+    ],
+    "exclude": [
+      "frühlingszwiebel",
+      "lauchzwiebel",
+      "lauchgemüse tk"
+    ]
+  },
+  "gurke": {
+    "name": "Salatgurke",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 0.69,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "gurke",
+      "salatgurke",
+      "schlangengurke"
+    ],
+    "exclude": [
+      "gurkensalat",
+      "gewürzgurke",
+      "gewürzgurken",
+      "senfgurken",
+      "cornichons",
+      "gurkenglas"
+    ]
+  },
+  "salat": {
+    "name": "Eisbergsalat",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 0.99,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "eisbergsalat",
+      "kopfsalat"
+    ],
+    "exclude": [
+      "salatsauce",
+      "salatdressing",
+      "kartoffelsalat",
+      "nudelsalat",
+      "fruchtsalat",
+      "salatgurke"
+    ]
+  },
+  "champignons": {
+    "name": "Champignons",
+    "unit": "g",
+    "pack": 250,
+    "basePrice": 1.49,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "champignons",
+      "champignon"
+    ],
+    "exclude": [
+      "champignonsuppe",
+      "champignoncreme",
+      "schlemmerfilet"
+    ]
+  },
+  "fzwiebel": {
+    "name": "Frühlingszwiebeln",
+    "unit": "Bund",
+    "pack": 1,
+    "basePrice": 0.69,
+    "category": "obst",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "frühlingszwiebel",
+      "frühlingszwiebeln"
+    ],
+    "exclude": []
+  },
+  "avocado": {
+    "name": "Avocado",
+    "unit": "Stk",
+    "pack": 1,
+    "basePrice": 0.99,
+    "category": "obst",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "avocado",
+      "avocados"
+    ],
+    "exclude": [
+      "avocadoöl",
+      "avocadocreme",
+      "guacamole"
+    ]
+  },
+  "tomdose": {
+    "name": "Tomaten, gehackt",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 0.65,
+    "category": "konserve",
+    "tags": [
+      "hist"
+    ],
+    "packName": "Dose 400 g",
+    "match": [
+      "tomaten",
+      "gehackte tomaten",
+      "stückige tomaten"
+    ],
+    "exclude": [
+      "tomatensaft",
+      "tomatenmark",
+      "tomatensoße",
+      "tomatensauce",
+      "tomatenketchup",
+      "cherrytomaten",
+      "kirschtomaten",
+      "tomatenchips",
+      "getrocknete tomaten",
+      "rahmsauce",
+      "sauce",
+      "soße",
+      "suppe",
+      "chutney"
+    ]
+  },
+  "tommark": {
+    "name": "Tomatenmark",
+    "unit": "g",
+    "pack": 200,
+    "basePrice": 0.79,
+    "category": "konserve",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "tomatenmark"
+    ],
+    "exclude": []
+  },
+  "kicher": {
+    "name": "Kichererbsen",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 0.89,
+    "category": "konserve",
+    "tags": [
+      "hist"
+    ],
+    "packName": "Dose 400 g",
+    "match": [
+      "kichererbsen"
+    ],
+    "exclude": [
+      "kichererbsenchips",
+      "kichererbsennudeln"
+    ]
+  },
+  "kidney": {
+    "name": "Kidneybohnen",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 0.79,
+    "category": "konserve",
+    "tags": [
+      "hist"
+    ],
+    "packName": "Dose 400 g",
+    "match": [
+      "kidneybohnen"
+    ],
+    "exclude": []
+  },
+  "mais": {
+    "name": "Mais",
+    "unit": "g",
+    "pack": 285,
+    "basePrice": 0.89,
+    "category": "konserve",
+    "tags": [],
+    "packName": "Dose 285 g",
+    "match": [
+      "mais",
+      "zuckermais"
+    ],
+    "exclude": [
+      "maiskeimöl",
+      "maiswaffel",
+      "maischips",
+      "maisstärke",
+      "popcorn",
+      "cornflakes",
+      "maisbrot",
+      "mais-hähnchen",
+      "maishähnchen",
+      "hähnchen-schenkel",
+      "hähnchenschenkel",
+      "schenkel"
+    ]
+  },
+  "kokos": {
+    "name": "Kokosmilch",
+    "unit": "ml",
+    "pack": 400,
+    "basePrice": 1.29,
+    "category": "konserve",
+    "tags": [],
+    "packName": "Dose 400 ml",
+    "match": [
+      "kokosmilch"
+    ],
+    "exclude": [
+      "kokosmilchjoghurt",
+      "kokosmilchdessert",
+      "milchreis",
+      "grießpudding",
+      "pudding",
+      "dessert"
+    ]
+  },
+  "thunfisch": {
+    "name": "Thunfisch im eigenen Saft",
+    "unit": "g",
+    "pack": 150,
+    "basePrice": 1.49,
+    "category": "konserve",
+    "tags": [
+      "fisch",
+      "hist"
+    ],
+    "packName": "Dose 150 g",
+    "match": [
+      "thunfisch"
+    ],
+    "exclude": [
+      "thunfischsalat",
+      "salat"
+    ]
+  },
+  "soja": {
+    "name": "Sojasauce",
+    "unit": "ml",
+    "pack": 150,
+    "basePrice": 1.49,
+    "category": "konserve",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "sojasauce",
+      "sojasoße"
+    ],
+    "exclude": [
+      "sojamilch",
+      "sojadrink",
+      "sojajoghurt",
+      "sojaöl"
+    ]
+  },
+  "sahne": {
+    "name": "Schlagsahne",
+    "unit": "ml",
+    "pack": 200,
+    "basePrice": 0.79,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt"
+    ],
+    "packName": null,
+    "match": [
+      "schlagsahne",
+      "sahne"
+    ],
+    "exclude": [
+      "saure sahne",
+      "sahnejoghurt",
+      "sahnesoße",
+      "sahnesauce",
+      "kokossahne",
+      "sahnequark",
+      "sahnesteif",
+      "sahne-toffee",
+      "sahne-toffees",
+      "sahnetoffee",
+      "toffee"
+    ]
+  },
+  "milch": {
+    "name": "Milch 1,5 %",
+    "unit": "ml",
+    "pack": 1000,
+    "basePrice": 1.09,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt"
+    ],
+    "packName": null,
+    "match": [
+      "h-milch",
+      "frischmilch",
+      "vollmilch",
+      "fettarme milch"
+    ],
+    "exclude": [
+      "kondensmilch",
+      "kokosmilch",
+      "buttermilch",
+      "sojamilch",
+      "hafermilch",
+      "mandelmilch",
+      "milchreis",
+      "milchschnitte",
+      "milchshake",
+      "kaffeemilch",
+      "ziegenmilch"
+    ]
+  },
+  "butter": {
+    "name": "Butter",
+    "unit": "g",
+    "pack": 250,
+    "basePrice": 2.29,
+    "category": "kuehl",
+    "tags": [
+      "milch"
+    ],
+    "packName": null,
+    "match": [
+      "butter"
+    ],
+    "exclude": [
+      "butterkeks",
+      "butterkekse",
+      "buttermilch",
+      "erdnussbutter",
+      "butterbrot",
+      "butterkäse",
+      "buttergebäck",
+      "butteraroma",
+      "butterschmalz",
+      "kräuterbutter",
+      "nut-butter",
+      "nussbutter",
+      "butter-cups",
+      "buttercups",
+      "cashewbutter",
+      "mandelbutter"
+    ]
+  },
+  "eier": {
+    "name": "Eier, Freilandhaltung",
+    "unit": "Stk",
+    "pack": 10,
+    "basePrice": 2.99,
+    "category": "kuehl",
+    "tags": [
+      "ei"
+    ],
+    "packName": "10 Stk",
+    "match": [
+      "eier",
+      "freilandeier"
+    ],
+    "exclude": [
+      "eierlikör",
+      "eiernudeln",
+      "rühreigewürz",
+      "ostereier",
+      "nudeln",
+      "teigware",
+      "teigwaren",
+      "mie-nudeln",
+      "wok-nudeln",
+      "eier-mie-nudeln",
+      "eier-wok-nudeln"
+    ]
+  },
+  "mozzarella": {
+    "name": "Mozzarella",
+    "unit": "g",
+    "pack": 125,
+    "basePrice": 0.89,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt"
+    ],
+    "packName": null,
+    "match": [
+      "mozzarella"
+    ],
+    "exclude": []
+  },
+  "parmesan": {
+    "name": "Grana Padano, gerieben",
+    "unit": "g",
+    "pack": 100,
+    "basePrice": 1.79,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "parmesan",
+      "grana padano"
+    ],
+    "exclude": []
+  },
+  "gouda": {
+    "name": "Gouda, gerieben",
+    "unit": "g",
+    "pack": 200,
+    "basePrice": 1.79,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "gouda"
+    ],
+    "exclude": []
+  },
+  "feta": {
+    "name": "Feta",
+    "unit": "g",
+    "pack": 200,
+    "basePrice": 1.49,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "feta"
+    ],
+    "exclude": [
+      "fetacreme",
+      "fetadip"
+    ]
+  },
+  "frischkaese": {
+    "name": "Frischkäse",
+    "unit": "g",
+    "pack": 200,
+    "basePrice": 0.99,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt"
+    ],
+    "packName": null,
+    "match": [
+      "frischkäse"
+    ],
+    "exclude": [
+      "frischkäsezubereitung mit"
+    ]
+  },
+  "quark": {
+    "name": "Speisequark",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 1.29,
+    "category": "kuehl",
+    "tags": [
+      "milch",
+      "lakt"
+    ],
+    "packName": null,
+    "match": [
+      "speisequark",
+      "quark"
+    ],
+    "exclude": [
+      "quarkbällchen",
+      "quarktasche",
+      "quarkkeulchen",
+      "kräuterquark fertig",
+      "genuss",
+      "dessert",
+      "früchtequark",
+      "fruchtquark"
+    ]
+  },
+  "tofu": {
+    "name": "Tofu natur",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 1.99,
+    "category": "kuehl",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "tofu"
+    ],
+    "exclude": []
+  },
+  "haehnchen": {
+    "name": "Hähnchenbrustfilet",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 4.49,
+    "category": "fleisch",
+    "tags": [
+      "fleisch"
+    ],
+    "packName": null,
+    "match": [
+      "hähnchenbrustfilet",
+      "hähnchenbrust",
+      "hähnchen-innenfilet",
+      "hähnchenfilet"
+    ],
+    "exclude": [
+      "hähnchenschenkel",
+      "hähnchennuggets",
+      "hähnchenwurst",
+      "geflügelwurst"
+    ]
+  },
+  "pute": {
+    "name": "Putenschnitzel",
+    "unit": "g",
+    "pack": 400,
+    "basePrice": 4.79,
+    "category": "fleisch",
+    "tags": [
+      "fleisch"
+    ],
+    "packName": null,
+    "match": [
+      "putenschnitzel",
+      "putenbrust",
+      "putenbrustfilet"
+    ],
+    "exclude": [
+      "putenaufschnitt",
+      "putenwurst"
+    ]
+  },
+  "rinderhack": {
+    "name": "Rinderhackfleisch",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 5.49,
+    "category": "fleisch",
+    "tags": [
+      "fleisch",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "rinderhack",
+      "rinderhackfleisch"
+    ],
+    "exclude": [
+      "rinderhack-spieße"
+    ]
+  },
+  "hack": {
+    "name": "Hackfleisch, gemischt",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 3.99,
+    "category": "fleisch",
+    "tags": [
+      "fleisch",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "hackfleisch gemischt",
+      "gemischtes hackfleisch",
+      "hackfleisch"
+    ],
+    "exclude": [
+      "rinderhack",
+      "rinderhackfleisch",
+      "hackbraten",
+      "hacksteak",
+      "hackfleischsauce",
+      "hähnchen-hackfleisch",
+      "hähnchenhackfleisch",
+      "geflügelhack",
+      "putenhack",
+      "hähnchenhack"
+    ]
+  },
+  "schwein": {
+    "name": "Schweineschnitzel",
+    "unit": "g",
+    "pack": 500,
+    "basePrice": 4.99,
+    "category": "fleisch",
+    "tags": [
+      "fleisch"
+    ],
+    "packName": null,
+    "match": [
+      "schweineschnitzel",
+      "schweinerückensteak"
+    ],
+    "exclude": [
+      "schweinebraten",
+      "schweinewurst"
+    ]
+  },
+  "speck": {
+    "name": "Speckwürfel",
+    "unit": "g",
+    "pack": 125,
+    "basePrice": 1.29,
+    "category": "fleisch",
+    "tags": [
+      "fleisch",
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "speckwürfel"
+    ],
+    "exclude": [
+      "speckstein",
+      "frühstücksspeck"
+    ]
+  },
+  "lachs": {
+    "name": "Lachsfilet, tiefgekühlt",
+    "unit": "g",
+    "pack": 250,
+    "basePrice": 3.99,
+    "category": "tk",
+    "tags": [
+      "fisch"
+    ],
+    "packName": null,
+    "match": [
+      "lachsfilet"
+    ],
+    "exclude": [
+      "räucherlachs",
+      "lachsschinken",
+      "graved lachs",
+      "lachs im brotteig",
+      "lachsstäbchen",
+      "lachs sushi"
+    ]
+  },
+  "spinat": {
+    "name": "Blattspinat, tiefgekühlt",
+    "unit": "g",
+    "pack": 450,
+    "basePrice": 1.29,
+    "category": "tk",
+    "tags": [
+      "hist"
+    ],
+    "packName": null,
+    "match": [
+      "blattspinat",
+      "spinat"
+    ],
+    "exclude": [
+      "spinatknödel",
+      "spinat-ricotta",
+      "spinatnudeln",
+      "spinat lasagne",
+      "rahmspinat"
+    ]
+  },
+  "erbsen": {
+    "name": "Erbsen, tiefgekühlt",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 1.99,
+    "category": "tk",
+    "tags": [],
+    "packName": null,
+    "match": [
+      "erbsen"
+    ],
+    "exclude": [
+      "erbsensuppe",
+      "erbseneintopf",
+      "erbsenchips"
+    ]
+  },
+  "oel": {
+    "name": "Rapsöl",
+    "unit": "ml",
+    "pack": 1000,
+    "basePrice": 2.29,
+    "category": "vorrat",
+    "tags": [
+      "basic"
+    ],
+    "packName": null,
+    "match": [
+      "rapsöl"
+    ],
+    "exclude": [
+      "rapsölmargarine"
+    ]
+  },
+  "bruehe": {
+    "name": "Gemüsebrühe, Pulver",
+    "unit": "g",
+    "pack": 250,
+    "basePrice": 1.29,
+    "category": "vorrat",
+    "tags": [
+      "basic"
+    ],
+    "packName": null,
+    "match": [
+      "gemüsebrühe"
+    ],
+    "exclude": [
+      "gemüsebrühwürfel fertig"
+    ]
+  },
+  "mehl": {
+    "name": "Weizenmehl",
+    "unit": "g",
+    "pack": 1000,
+    "basePrice": 0.69,
+    "category": "vorrat",
+    "tags": [
+      "basic",
+      "glut"
+    ],
+    "packName": null,
+    "match": [
+      "weizenmehl",
+      "mehl type 405",
+      "mehl 405"
+    ],
+    "exclude": [
+      "maismehl",
+      "mandelmehl",
+      "kokosmehl",
+      "vollkornmehl dinkel",
+      "buchweizenmehl"
+    ]
+  }
+}

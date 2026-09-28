@@ -1,0 +1,14 @@
+Angebote-Scrape 2026-09-28 (2026-KW40)
+
+aldi       status=ok           items= 13  source=https://www.aldi-nord.de/angebote.html
+lidl       status=fehlt        items=  0  source=https://www.lidl.de/c/online-prospekte/s10005610
+penny      status=fehlt        items=  0  source=https://www.penny.de/angebote
+netto      status=fehlt        items=  0  source=https://www.netto-online.de/
+kaufland   status=ok           items= 19  source=https://filiale.kaufland.de/angebote/uebersicht.html
+rewe       status=fehlt        items=  0  source=https://www.rewe.de/angebote
+edeka      status=fehlt        items=  0  source=https://www.edeka.de/eh/marktangebote.jsp
+
+ok: aldi, kaufland
+teilweise: -
+fehlt: lidl, penny, netto, rewe, edeka
+gesamt gematchte Artikel: 32
