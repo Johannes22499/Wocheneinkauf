@@ -9,6 +9,10 @@ struct WochenkorbApp: App {
             ContentView()
                 .environment(store)
                 .task { await store.start() }
+                .onOpenURL { url in
+                    guard url.pathExtension.lowercased() == "pdf" else { return }
+                    store.handleIncomingPDF(url)
+                }
         }
     }
 }

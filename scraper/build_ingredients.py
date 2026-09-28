@@ -110,7 +110,7 @@ KEYWORDS = {
     "salat": {"match": ["eisbergsalat", "kopfsalat"], "exclude": ["salatsauce", "salatdressing", "kartoffelsalat",
                                                                    "nudelsalat", "fruchtsalat", "salatgurke"]},
     "champignons": {"match": ["champignons", "champignon"], "exclude": ["champignonsuppe", "champignoncreme",
-                                                                        "schlemmerfilet"]},
+                                                                        "schlemmerfilet", "käserei champignon", "kaeserei champignon"]},
     "fzwiebel": {"match": ["frühlingszwiebel", "frühlingszwiebeln"], "exclude": []},
     "avocado": {"match": ["avocado", "avocados"], "exclude": ["avocadoöl", "avocadocreme", "guacamole"]},
     "tomdose": {"match": ["tomaten", "gehackte tomaten", "stückige tomaten"],

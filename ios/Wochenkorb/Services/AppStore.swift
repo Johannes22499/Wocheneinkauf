@@ -9,8 +9,14 @@ final class AppStore {
     var offers: OffersFile?
     var offerSource: OfferService.Source = .bundle
     var toast: String?
+    /// Offers imported from a prospectus PDF, one per store, pruned of expired entries.
+    var importedOffers: [String: StoreOffer] = [:]
+    /// Set by the file importer / "Öffnen in" share-sheet handoff; `ContentView` presents the
+    /// import sheet for it and clears it again.
+    var pendingImportURL: URL?
 
     private let offerService = OfferService()
+    private let importedOffersStore = ImportedOffersStore()
     private var toastTask: Task<Void, Never>?
 
     init() {
@@ -25,11 +31,82 @@ final class AppStore {
         let result = await offerService.load()
         offers = result.offers
         offerSource = result.source
+        importedOffers = importedOffersStore.loadPruned(today: Planner.todayString())
         refit()
     }
 
     var planner: Planner {
-        Planner(catalog: catalog, offers: offers, settings: settings)
+        Planner(catalog: catalog, offers: effectiveOffers, settings: settings)
+    }
+
+    /// Merges the downloaded/cached offers with still-valid PDF imports: an import wins over
+    /// the automatic download for its store as long as it hasn't expired.
+    var effectiveOffers: OffersFile? {
+        Self.merge(downloaded: offers, imported: importedOffers, today: Planner.todayString())
+    }
+
+    /// Pure merge logic (no instance state), so it's directly testable: an import for a store
+    /// is used only while `imported[store].validTo >= today`; otherwise the download wins.
+    static func merge(downloaded: OffersFile?, imported: [String: StoreOffer], today: String) -> OffersFile? {
+        let validImports = imported.filter { $0.value.validTo >= today }
+        guard let downloaded else {
+            guard !validImports.isEmpty else { return nil }
+            return OffersFile(kw: "import", stand: today, ort: nil, hinweis: nil, stores: validImports)
+        }
+        guard !validImports.isEmpty else { return downloaded }
+        var stores = downloaded.stores
+        for (id, imported) in validImports { stores[id] = imported }
+        return OffersFile(kw: downloaded.kw, stand: downloaded.stand, ort: downloaded.ort, hinweis: downloaded.hinweis, stores: stores)
+    }
+
+    /// True while `storeID` is currently served from a PDF import rather than the download.
+    func isImported(_ storeID: String) -> Bool {
+        guard let offer = importedOffers[storeID] else { return false }
+        return offer.validTo >= Planner.todayString()
+    }
+
+    // MARK: - Prospectus import
+
+    func beginImport(fileURL: URL) {
+        pendingImportURL = fileURL
+    }
+
+    /// Takes a PDF handed to the app (`.fileImporter` selection or an "Öffnen in Wochenkorb"
+    /// share-sheet URL), reads it through its security scope if needed, and copies it into our
+    /// own Application Support folder so it stays readable for the rest of the import flow.
+    func handleIncomingPDF(_ url: URL) {
+        let needsScope = url.startAccessingSecurityScopedResource()
+        defer { if needsScope { url.stopAccessingSecurityScopedResource() } }
+        guard let supportDir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first else { return }
+        let importsDir = supportDir.appendingPathComponent("ProspectImports", isDirectory: true)
+        do {
+            try FileManager.default.createDirectory(at: importsDir, withIntermediateDirectories: true)
+            let dest = importsDir.appendingPathComponent(url.lastPathComponent.isEmpty ? "\(UUID().uuidString).pdf" : url.lastPathComponent)
+            if FileManager.default.fileExists(atPath: dest.path) {
+                try FileManager.default.removeItem(at: dest)
+            }
+            try FileManager.default.copyItem(at: url, to: dest)
+            beginImport(fileURL: dest)
+        } catch {
+            showToast("Die PDF-Datei konnte nicht gelesen werden.")
+        }
+    }
+
+    func clearPendingImport() {
+        pendingImportURL = nil
+    }
+
+    func applyImport(storeID: String, offer: StoreOffer) {
+        importedOffersStore.setOffer(offer, forStore: storeID)
+        importedOffers[storeID] = offer
+        refit()
+        showToast("Angebote aus PDF übernommen.")
+    }
+
+    func deleteImport(storeID: String) {
+        importedOffersStore.delete(storeID: storeID)
+        importedOffers.removeValue(forKey: storeID)
+        refit()
     }
 
     // MARK: - Derived data for views

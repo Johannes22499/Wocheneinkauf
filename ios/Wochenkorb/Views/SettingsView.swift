@@ -1,7 +1,9 @@
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct SettingsView: View {
     @Environment(AppStore.self) private var store
+    @State private var showFileImporter = false
 
     var body: some View {
         List {
@@ -79,15 +81,23 @@ struct SettingsView: View {
             Section {
                 offersHeader
                 ForEach(Settings.allStores, id: \.self) { id in
-                    if let o = store.offers?.stores[id] {
+                    if let o = store.effectiveOffers?.stores[id] {
                         OfferRow(storeID: id, offer: o)
                     }
                 }
+                Button("Prospekt-PDF importieren") { showFileImporter = true }
             } header: {
                 Text("Angebote diese Woche")
+            } footer: {
+                Text("Für Rewe und Edeka Hafenmarkt (und auf Wunsch Lidl, Penny, Netto) kannst du den wöchentlichen Prospekt als PDF importieren – als Datei oder über „Öffnen in Wochenkorb“ aus einer anderen App.")
             }
         }
         .navigationTitle("Einstellungen")
+        .fileImporter(isPresented: $showFileImporter, allowedContentTypes: [.pdf]) { result in
+            if case .success(let url) = result {
+                store.handleIncomingPDF(url)
+            }
+        }
     }
 
     private func subValue(_ id: String) -> Bool {
@@ -127,19 +137,27 @@ private struct OfferRow: View {
     let storeID: String
     let offer: StoreOffer
 
+    private var isImported: Bool { store.isImported(storeID) }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
                 Text(offer.market ?? offer.name ?? store.catalog.stores[storeID]?.name ?? storeID)
                     .font(.subheadline.weight(.semibold))
                 Spacer()
-                if let link = offer.source, let url = URL(string: link) {
+                if isImported {
+                    Button("Löschen", role: .destructive) { store.deleteImport(storeID: storeID) }
+                        .font(.caption)
+                } else if let link = offer.source, let url = URL(string: link) {
                     Link("Quelle", destination: url).font(.caption)
                 }
             }
-            Text("\(offer.validFrom) bis \(offer.validTo) · \(offer.items.count) passende Angebote\(offer.status.map { " · " + $0 } ?? "")")
+            Text("\(offer.validFrom) bis \(offer.validTo) · \(offer.items.count) passende Angebote")
                 .font(.caption)
                 .foregroundStyle(store.planner.offersLive(storeID) ? .primary : .secondary)
+            Text(isImported ? "Aus PDF (gültig bis \(offer.validTo))" : "Automatisch")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
         }
         .padding(.vertical, 2)
     }
