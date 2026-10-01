@@ -1,6 +1,6 @@
 {
   "kw": "2026-KW40",
-  "stand": "2026-09-28",
+  "stand": "2026-10-01",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -34,6 +34,12 @@
           "price": 0.49,
           "pk": 1.0,
           "label": "Stück"
+        },
+        "spinat": {
+          "product": "Spinat",
+          "price": 1.49,
+          "pk": 500.0,
+          "label": "500-g-Beutel"
         },
         "reis": {
           "product": "BON-RI Basmati-Reis XXL",
@@ -121,124 +127,94 @@
     },
     "kaufland": {
       "name": "Kaufland",
-      "validFrom": "2026-09-24",
-      "validTo": "2026-09-30",
+      "validFrom": "2026-10-01",
+      "validTo": "2026-10-07",
       "status": "ok",
       "source": "https://filiale.kaufland.de/angebote/uebersicht.html",
       "items": {
-        "avocado": {
-          "product": "Peruan./südafrik. Avocado, lose",
+        "salat": {
+          "product": "Dtsch./span. Eisbergsalat",
           "price": 0.69,
           "pk": 1.0,
           "label": "Stück"
         },
-        "tommark": {
-          "product": "K-BIO Bio-Tomatenmark",
-          "price": 0.79,
+        "mozzarella": {
+          "product": "K-CLASSIC Mozzarella",
+          "price": 0.69,
           "pk": 200.0,
-          "label": "200-g-Tube"
+          "label": "200-g-Packg."
+        },
+        "gouda": {
+          "product": "K-CLASSIC Gouda XXL",
+          "price": 2.99,
+          "pk": 500.0,
+          "label": "500-g-Großpackg."
         },
         "kartoffeln": {
-          "product": "Dtsch. Speisekartoffeln XXL",
-          "price": 2.99,
-          "pk": 5000.0,
-          "label": "5-kg-Sack"
-        },
-        "zwiebeln": {
-          "product": "Dtsch. Zwiebeln XXL",
-          "price": 2.99,
-          "pk": 5000.0,
-          "label": "5-kg-Sack"
-        },
-        "karotten": {
-          "product": "Dtsch. Möhren XXL",
-          "price": 1.99,
-          "pk": 3000.0,
-          "label": "3-kg-Beutel"
+          "product": "Dtsch. Speisekartoffeln",
+          "price": 2.49,
+          "pk": 2500.0,
+          "label": "2,5-kg-Sack"
         },
         "kuerbis": {
-          "product": "Demeter dtsch. Kürbis, lose",
-          "price": 2.49,
+          "product": "Dtsch. Kürbis, lose",
+          "price": 3.99,
           "pk": 1.0,
           "label": "Stück"
         },
-        "rinderhack": {
-          "product": "K-PURLAND WERTSCHÄTZE Rinderhackfleisch",
-          "price": 4.99,
-          "pk": 500.0,
-          "label": "500-g-Packg."
-        },
-        "schwein": {
-          "product": "K-PURLAND Schweinerückensteak Mediterran Style",
-          "price": 3.59,
-          "pk": 600.0,
-          "label": "600-g-Packg."
-        },
         "haehnchen": {
-          "product": "K-WERTSCHÄTZE Hähnchenbrustfilet Teilstücke",
-          "price": 1.39,
-          "pk": 100.0,
-          "label": "100 g"
-        },
-        "hack": {
-          "product": "K-WERTSCHÄTZE Hackfleisch gemischt von Schwein und Rind",
-          "price": 0.99,
-          "pk": 100.0,
-          "label": "100 g"
-        },
-        "milch": {
-          "product": "SCHWARZWALDMILCH Protein-H-Milch, 0,9 % Fett",
-          "price": 1.49,
+          "product": "K-PURLAND Hähnchenbrustfilet- Teilstücke XXL",
+          "price": 8.29,
           "pk": 1000.0,
-          "label": "1-l-Packg."
+          "label": "1-kg-Großpackg."
         },
-        "butter": {
-          "product": "RAMA Mit Butter",
+        "rinderhack": {
+          "product": "K-WERTSCHÄTZE Rinderhackfleisch vom Jungbullen",
+          "price": 1.19,
+          "pk": 100.0,
+          "label": "100 g"
+        },
+        "pute": {
+          "product": "K-WERTSCHÄTZE Putenschnitzel",
           "price": 1.29,
-          "pk": 225.0,
-          "label": "225-g-Packg."
+          "pk": 100.0,
+          "label": "100 g"
         },
-        "erbsen": {
-          "product": "COROOS Erbsen",
-          "price": 0.69,
-          "pk": 400.0,
-          "label": "400-g-Dose"
+        "quark": {
+          "product": "QUARKI Quark",
+          "price": 4.0,
+          "pk": 250.0,
+          "label": "250-g-Packg."
         },
-        "oel": {
-          "product": "BRÄNDLE Vita-Rapsöl oder BIOVIT Bio-Sonnenblumenöl",
-          "price": 2.79,
-          "pk": 750.0,
-          "label": "500 - 750-ml-Fl."
-        },
-        "reis": {
-          "product": "ORYZA Reis-Spezialität versch. Sorten",
+        "spinat": {
+          "product": "IGLO Rahm-Spinat",
           "price": 1.79,
           "pk": 500.0,
           "label": "500-g-Packg."
         },
-        "linsen": {
-          "product": "K-BIO Bio-Linsen",
-          "price": 1.11,
+        "tommark": {
+          "product": "K-CLASSIC Tomatenmark",
+          "price": 2.31,
+          "pk": 200.0,
+          "label": "200-g-Tube"
+        },
+        "kicher": {
+          "product": "DILEK Kichererbsen",
+          "price": 1.49,
+          "pk": 800.0,
+          "label": "800-g-Dose"
+        },
+        "reis": {
+          "product": "REIS-FIT Spitzen-Langkorn-Reis",
+          "price": 1.39,
           "pk": 500.0,
           "label": "500-g-Packg."
         },
-        "parmesan": {
-          "product": "K-GOLD EDITION Grana Padano DOP, gerieben",
-          "price": 2.59,
-          "pk": 150.0,
-          "label": "150-g-Packg."
-        },
-        "spaghetti": {
-          "product": "BARILLA Spaghetti oder Fusilli Protein+",
-          "price": 2.39,
-          "pk": 400.0,
-          "label": "400-g-Packg."
-        },
-        "gnocchi": {
-          "product": "HILCONA Tortelloni oder Gnocchi XXL",
-          "price": 2.39,
-          "pk": 750.0,
-          "label": "750-g-Packg."
+        "mehl": {
+          "product": "AURORA Weizenmehl Klassik Type 405",
+          "price": 0.99,
+          "pk": 1000.0,
+          "label": "1-kg-Packg."
         }
       }
     },
