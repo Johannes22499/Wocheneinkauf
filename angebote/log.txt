@@ -1,6 +1,6 @@
-Angebote-Scrape 2026-10-01 (2026-KW40)
+Angebote-Scrape 2026-10-04 (2026-KW40)
 
-aldi       status=ok           items= 14  source=https://www.aldi-nord.de/angebote.html
+aldi       status=ok           items=  9  source=https://www.aldi-nord.de/angebote.html
 lidl       status=fehlt        items=  0  source=https://www.lidl.de/c/online-prospekte/s10005610
 penny      status=fehlt        items=  0  source=https://www.penny.de/angebote
 netto      status=fehlt        items=  0  source=https://www.netto-online.de/
@@ -11,4 +11,4 @@ edeka      status=fehlt        items=  0  source=https://www.edeka.de/eh/marktan
 ok: aldi, kaufland
 teilweise: -
 fehlt: lidl, penny, netto, rewe, edeka
-gesamt gematchte Artikel: 28
+gesamt gematchte Artikel: 23
