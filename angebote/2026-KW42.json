@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW41",
-  "stand": "2026-10-11",
+  "kw": "2026-KW42",
+  "stand": "2026-10-15",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -180,41 +180,23 @@
           "pk": 300.0,
           "label": "280 - 300-g-Packg."
         },
-        "kokos": {
-          "product": "K-CLASSIC ASIA Kokosmilch fettreduziert",
-          "price": 0.99,
-          "pk": 400.0,
-          "label": "400-ml-Dose"
-        },
-        "soja": {
-          "product": "KIKKOMAN Sojasauce",
-          "price": 4.99,
-          "pk": 500.0,
-          "label": "500-ml-Fl."
-        },
-        "mehl": {
-          "product": "K-CLASSIC Weizenmehl Type 405 XXL",
-          "price": 0.99,
-          "pk": 2000.0,
-          "label": "2-kg-Großpackg."
-        },
-        "milch": {
-          "product": "SCHWARZWALDMILCH Protein-H-Milch, 0,9 % Fett",
-          "price": 1.49,
-          "pk": 1000.0,
-          "label": "1-l-Packg."
-        },
-        "spaghetti": {
-          "product": "BARILLA Spaghetti oder Fusilli Protein+",
-          "price": 1.99,
-          "pk": 400.0,
-          "label": "400-g-Packg."
-        },
         "kartoffeln": {
-          "product": "Bioland dtsch. Speisekartoffeln",
-          "price": 1.79,
-          "pk": 1500.0,
-          "label": "1,5-kg-Netz"
+          "product": "Dtsch. Speisekartoffeln",
+          "price": 4.99,
+          "pk": 7500.0,
+          "label": "7,5-kg-Sack"
+        },
+        "mozzarella": {
+          "product": "K-CLASSIC Mini-Mozzarella 45 % Fett i. Tr.",
+          "price": 0.99,
+          "pk": 245.0,
+          "label": "245-g-Packg."
+        },
+        "feta": {
+          "product": "PATROS Original Feta od. Hirtenkäse",
+          "price": 1.59,
+          "pk": 180.0,
+          "label": "150 - 180-g-Packg."
         }
       }
     },
