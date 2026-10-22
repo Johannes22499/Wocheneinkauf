@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW42",
-  "stand": "2026-10-18",
+  "kw": "2026-KW43",
+  "stand": "2026-10-22",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -150,11 +150,23 @@
           "pk": 100.0,
           "label": "100 g"
         },
+        "milch": {
+          "product": "K-CLASSIC Fettarme H-Milch",
+          "price": 8.0,
+          "pk": 1000.0,
+          "label": "1-l-Packg."
+        },
         "mozzarella": {
           "product": "GALBANI Mozzarella Classic",
           "price": 1.19,
           "pk": 225.0,
           "label": "225-g-Packg."
+        },
+        "gouda": {
+          "product": "K-CLASSIC Gouda jung",
+          "price": 2.99,
+          "pk": 450.0,
+          "label": "450-g-Stück"
         },
         "gnocchi": {
           "product": "BÜRGER Gnocchi",
