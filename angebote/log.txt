@@ -1,4 +1,4 @@
-Angebote-Scrape 2026-10-22 (2026-KW43)
+Angebote-Scrape 2026-10-25 (2026-KW43)
 
 aldi       status=ok           items=  8  source=https://www.aldi-nord.de/angebote.html
 lidl       status=fehlt        items=  0  source=https://www.lidl.de/c/online-prospekte/s10005610

@@ -1,70 +1,70 @@
 {
   "kw": "2026-KW43",
-  "stand": "2026-10-22",
+  "stand": "2026-10-25",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
     "aldi": {
       "name": "Aldi Nord",
-      "validFrom": "2026-10-18",
-      "validTo": "2026-10-28",
+      "validFrom": "2026-10-25",
+      "validTo": "2026-10-31",
       "status": "ok",
       "source": "https://www.aldi-nord.de/angebote.html",
       "items": {
-        "mozzarella": {
-          "product": "WAGNER Steinofenpizza Mozzarella",
-          "price": 1.66,
-          "pk": 350.0,
-          "label": "350-g-Packung"
+        "kartoffeln": {
+          "product": "Speisekartoffeln",
+          "price": 2.99,
+          "pk": 5000.0,
+          "label": "5-kg-Netz"
         },
-        "mehl": {
-          "product": "BACK FAMILY Weizenmehl XXL",
-          "price": 1.09,
-          "pk": 2000.0,
-          "label": "2-kg-Packung"
+        "avocado": {
+          "product": "Avocado",
+          "price": 0.88,
+          "pk": 1.0,
+          "label": "Stück"
         },
-        "spinat": {
-          "product": "IGLO Rahm-Spinat",
-          "price": 1.79,
-          "pk": 750.0,
-          "label": "750-g-Packung"
+        "butter": {
+          "product": "WEIHENSTEPHAN Butter",
+          "price": 1.49,
+          "pk": 250.0,
+          "label": "250-g-Packung"
+        },
+        "reis": {
+          "product": "ASIA GREEN GARDEN Sushi-Reis",
+          "price": 1.29,
+          "pk": 500.0,
+          "label": "500-g-Beutel"
         },
         "zwiebeln": {
-          "product": "Zwiebeln rot",
-          "price": 0.89,
-          "pk": 1000.0,
-          "label": "1-kg-Netz"
+          "product": "Zwiebeln",
+          "price": 2.99,
+          "pk": 5000.0,
+          "label": "5-kg-Sack"
         },
-        "hack": {
-          "product": "Gemischtes Hackfleisch XXL",
-          "price": 4.99,
+        "spinat": {
+          "product": "BIO Spinat",
+          "price": 1.11,
+          "pk": 125.0,
+          "label": "125-g-Packung"
+        },
+        "rinderhack": {
+          "product": "Rinderhackfleisch XXL",
+          "price": 6.99,
           "pk": 800.0,
           "label": "800-g-Packung"
         },
-        "tomdose": {
-          "product": "ALL SEASONS Tomaten passiert",
-          "price": 0.99,
+        "haehnchen": {
+          "product": "Hähnchenbrustfilet-Teilstücke",
+          "price": 5.19,
           "pk": 600.0,
-          "label": "3x200-g-Packung"
-        },
-        "kartoffeln": {
-          "product": "Speisekartoffeln",
-          "price": 1.49,
-          "pk": 2000.0,
-          "label": "2-kg-Netz"
-        },
-        "blumenkohl": {
-          "product": "Blumenkohl",
-          "price": 1.11,
-          "pk": 1.0,
-          "label": "Stück"
+          "label": "600-g-Packung"
         }
       }
     },
     "lidl": {
       "name": "Lidl",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "fehlt",
       "source": "https://www.lidl.de/c/online-prospekte/s10005610",
       "items": {},
@@ -73,8 +73,8 @@
     },
     "penny": {
       "name": "Penny",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "fehlt",
       "source": "https://www.penny.de/angebote",
       "items": {},
@@ -82,8 +82,8 @@
     },
     "netto": {
       "name": "Netto",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "fehlt",
       "source": "https://www.netto-online.de/",
       "items": {},
@@ -91,95 +91,95 @@
     },
     "kaufland": {
       "name": "Kaufland",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "ok",
       "source": "https://filiale.kaufland.de/angebote/uebersicht.html",
       "items": {
         "butter": {
-          "product": "LANDLIEBE Butter oder Die Streichzarte",
-          "price": 1.29,
+          "product": "WEIHENSTEPHAN Butter oder Die Streichzarte",
+          "price": 1.11,
           "pk": 250.0,
           "label": "250-g-Packg."
         },
-        "gurke": {
-          "product": "Span. Bio-Gurke",
-          "price": 0.79,
+        "kartoffeln": {
+          "product": "Dtsch. Speisekartoffeln",
+          "price": 2.99,
+          "pk": 5000.0,
+          "label": "5-kg-Sack"
+        },
+        "avocado": {
+          "product": "Peruan./südafrik. Avocado, lose",
+          "price": 1.49,
           "pk": 1.0,
           "label": "Stück"
         },
         "kuerbis": {
-          "product": "Dtsch. Halloween-Kürbis, lose",
-          "price": 3.99,
+          "product": "Demeter dtsch. Kürbis, lose",
+          "price": 1.99,
           "pk": 1.0,
           "label": "Stück"
         },
         "zwiebeln": {
-          "product": "Dtsch. Zwiebeln",
-          "price": 1.49,
-          "pk": 2000.0,
-          "label": "2-kg-Sack"
-        },
-        "salat": {
-          "product": "Dtsch./belg. Kopfsalat",
+          "product": "Dtsch./niederl. Zwiebeln, rot",
           "price": 0.99,
-          "pk": 1.0,
-          "label": "Stück"
+          "pk": 1000.0,
+          "label": "1-kg-Packg."
         },
-        "kartoffeln": {
-          "product": "Dtsch. Speisekartoffeln",
-          "price": 2.79,
-          "pk": 2500.0,
-          "label": "2,5-kg-Sack"
+        "rinderhack": {
+          "product": "K-BIO Bioland Rinderhackfleisch",
+          "price": 5.59,
+          "pk": 400.0,
+          "label": "400-g-Packg."
         },
-        "schwein": {
-          "product": "K-PURLAND WERTSCHÄTZE Schweineschnitzel",
-          "price": 2.29,
-          "pk": 300.0,
-          "label": "300-g-Packg."
-        },
-        "hack": {
-          "product": "K-PURLAND Hackfleisch gemischt",
-          "price": 3.49,
-          "pk": 500.0,
-          "label": "500-g-Packg."
-        },
-        "pute": {
-          "product": "LANGEWIESCHE Putenbrust",
-          "price": 1.79,
+        "haehnchen": {
+          "product": "K-WERTSCHÄTZE Hähnchenbrustfilet Teilstücke",
+          "price": 1.39,
           "pk": 100.0,
           "label": "100 g"
         },
-        "milch": {
-          "product": "K-CLASSIC Fettarme H-Milch",
-          "price": 8.0,
-          "pk": 1000.0,
-          "label": "1-l-Packg."
+        "quark": {
+          "product": "QUARKI Quark",
+          "price": 1.59,
+          "pk": 250.0,
+          "label": "250-g-Packg."
         },
         "mozzarella": {
-          "product": "GALBANI Mozzarella Classic",
-          "price": 1.19,
-          "pk": 225.0,
-          "label": "225-g-Packg."
+          "product": "K-CLASSIC Mozzarella XXL",
+          "price": 1.49,
+          "pk": 420.0,
+          "label": "420-g-Großpackg."
         },
         "gouda": {
-          "product": "K-CLASSIC Gouda jung",
-          "price": 2.99,
-          "pk": 450.0,
-          "label": "450-g-Stück"
+          "product": "FRICO Gouda jung g. g. A.",
+          "price": 0.88,
+          "pk": 100.0,
+          "label": "100 g"
         },
-        "gnocchi": {
-          "product": "BÜRGER Gnocchi",
+        "spinat": {
+          "product": "IGLO Rahm-Spinat",
           "price": 1.79,
-          "pk": 500.0,
-          "label": "500-g-Packg."
+          "pk": 750.0,
+          "label": "750-g-Packg."
+        },
+        "oel": {
+          "product": "RAPSGOLD Bio-Rapsöl",
+          "price": 4.49,
+          "pk": 750.0,
+          "label": "750-ml-Fl."
+        },
+        "mehl": {
+          "product": "KÄTHCHEN-GOLD Feines Weizenmehl",
+          "price": 3.79,
+          "pk": 5000.0,
+          "label": "5-kg-Packg."
         }
       }
     },
     "rewe": {
       "name": "Rewe",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "fehlt",
       "source": "https://www.rewe.de/angebote",
       "items": {},
@@ -188,8 +188,8 @@
     },
     "edeka": {
       "name": "Edeka",
-      "validFrom": "2026-10-19",
-      "validTo": "2026-10-24",
+      "validFrom": "2026-10-26",
+      "validTo": "2026-10-31",
       "status": "fehlt",
       "source": "https://www.edeka.de/eh/marktangebote.jsp",
       "items": {},
