@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW43",
-  "stand": "2026-10-25",
+  "kw": "2026-KW44",
+  "stand": "2026-10-29",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -173,6 +173,18 @@
           "price": 3.79,
           "pk": 5000.0,
           "label": "5-kg-Packg."
+        },
+        "erbsen": {
+          "product": "BONDUELLE Goldmais oder Erbsen & Möhrchen",
+          "price": 6.99,
+          "pk": 200.0,
+          "label": "9 x 150 - 200-g-Dose"
+        },
+        "blumenkohl": {
+          "product": "Dtsch./niederl. Blumenkohl, lose",
+          "price": 1.49,
+          "pk": 1.0,
+          "label": "Stück"
         }
       }
     },
