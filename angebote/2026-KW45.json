@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW44",
-  "stand": "2026-11-01",
+  "kw": "2026-KW45",
+  "stand": "2026-11-05",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -233,6 +233,12 @@
           "price": 2.79,
           "pk": 288.0,
           "label": "288-g-Packg."
+        },
+        "feta": {
+          "product": "SALAKIS Schafskäse oder Feta",
+          "price": 1.99,
+          "pk": 180.0,
+          "label": "150 - 180-g-Packg."
         }
       }
     },
