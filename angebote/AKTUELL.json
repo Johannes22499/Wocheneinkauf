@@ -1,94 +1,46 @@
 {
   "kw": "2026-KW45",
-  "stand": "2026-11-05",
+  "stand": "2026-11-08",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
     "aldi": {
       "name": "Aldi Nord",
-      "validFrom": "2026-11-01",
-      "validTo": "2026-11-11",
-      "status": "ok",
+      "validFrom": "2026-11-08",
+      "validTo": "2026-11-14",
+      "status": "teilweise",
       "source": "https://www.aldi-nord.de/angebote.html",
       "items": {
-        "lauch": {
-          "product": "Porree",
-          "price": 0.49,
-          "pk": 1.0,
-          "label": "Stück"
-        },
-        "butter": {
-          "product": "KERRYGOLD Butter",
-          "price": 1.49,
-          "pk": 250.0,
-          "label": "250-g-Packung"
-        },
         "kartoffeln": {
-          "product": "Kleine Speisekartoffeln „Drillinge“",
-          "price": 1.49,
-          "pk": 1000.0,
-          "label": "1-kg-Schale"
+          "product": "Speisekartoffeln",
+          "price": 3.33,
+          "pk": 5000.0,
+          "label": "5-kg-Netz"
         },
         "gurke": {
-          "product": "Gurke",
-          "price": 0.77,
+          "product": "BIO Gurke",
+          "price": 0.79,
           "pk": 1.0,
           "label": "Stück"
         },
-        "gnocchi": {
-          "product": "GOURMET FINEST CUISINE Gnocchi",
-          "price": 1.79,
-          "pk": 400.0,
-          "label": "400-g-Packung"
-        },
-        "penne": {
-          "product": "BARILLA Penne Rigate No. 73",
-          "price": 1.69,
-          "pk": 1000.0,
-          "label": "1-kg-Packung"
-        },
-        "spaghetti": {
-          "product": "BARILLA Spaghetti No. 5",
-          "price": 1.69,
-          "pk": 1000.0,
-          "label": "1-kg-Packung"
-        },
-        "reis": {
-          "product": "Djuvec-Reis-Gericht",
-          "price": 2.49,
+        "rinderhack": {
+          "product": "Rinderhackfleisch XXL",
+          "price": 7.99,
           "pk": 800.0,
-          "label": "800-g-Dose"
+          "label": "800-g-Packung"
         },
-        "hack": {
-          "product": "MEINE METZGEREI Gemischtes Hackfleisch XXL",
-          "price": 4.99,
-          "pk": 1000.0,
-          "label": "1-kg-Packung"
-        },
-        "gouda": {
-          "product": "MILSANI Gouda XXL",
-          "price": 2.79,
-          "pk": 600.0,
-          "label": "600-g-Packung"
-        },
-        "mozzarella": {
-          "product": "MILSANI Mozzarella XXL",
-          "price": 3.49,
-          "pk": 500.0,
-          "label": "500-g-Packung"
-        },
-        "frischkaese": {
-          "product": "BERGADER Körniger Frischkäse",
-          "price": 1.19,
-          "pk": 180.0,
-          "label": "180-g-Becher"
+        "thunfisch": {
+          "product": "DR. OETKER Die Ofenfrische Thunfisch",
+          "price": 1.99,
+          "pk": 435.0,
+          "label": "435-g-Packung"
         }
       }
     },
     "lidl": {
       "name": "Lidl",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "fehlt",
       "source": "https://www.lidl.de/c/online-prospekte/s10005610",
       "items": {},
@@ -97,8 +49,8 @@
     },
     "penny": {
       "name": "Penny",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "fehlt",
       "source": "https://www.penny.de/angebote",
       "items": {},
@@ -106,8 +58,8 @@
     },
     "netto": {
       "name": "Netto",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "fehlt",
       "source": "https://www.netto-online.de/",
       "items": {},
@@ -115,137 +67,83 @@
     },
     "kaufland": {
       "name": "Kaufland",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "ok",
       "source": "https://filiale.kaufland.de/angebote/uebersicht.html",
       "items": {
-        "butter": {
-          "product": "KERRYGOLD Butter",
-          "price": 1.59,
-          "pk": 200.0,
-          "label": "200-g-Becher oder 250-g-Packg."
-        },
-        "salat": {
-          "product": "Span. Eisbergsalat",
-          "price": 0.69,
-          "pk": 1.0,
-          "label": "Stück"
-        },
-        "avocado": {
-          "product": "Südafrik./peruan. Avocado, lose",
-          "price": 0.79,
-          "pk": 1.0,
-          "label": "Stück"
-        },
-        "quark": {
-          "product": "K-BIO Bioland Speisequark Magerstufe",
-          "price": 0.79,
-          "pk": 250.0,
-          "label": "250-g-Becher"
-        },
-        "zwiebeln": {
-          "product": "Dtsch. Zwiebeln XXL",
-          "price": 2.99,
+        "kartoffeln": {
+          "product": "Dtsch. Speisekartoffeln",
+          "price": 2.49,
           "pk": 5000.0,
           "label": "5-kg-Sack"
         },
-        "karotten": {
-          "product": "Dtsch. Möhren",
-          "price": 1.49,
+        "zwiebeln": {
+          "product": "Dtsch. Zwiebeln",
+          "price": 1.59,
           "pk": 2000.0,
-          "label": "2-kg-Beutel"
+          "label": "2-kg-Sack"
         },
-        "kartoffeln": {
-          "product": "Dtsch. Speisekartoffeln",
-          "price": 2.79,
-          "pk": 2500.0,
-          "label": "2,5-kg-Sack"
+        "salat": {
+          "product": "Ital. Kopfsalat, lose",
+          "price": 0.99,
+          "pk": 1.0,
+          "label": "Stück"
         },
-        "rinderhack": {
-          "product": "K-PURLAND WERTSCHÄTZE Rinderhackfleisch",
-          "price": 4.79,
-          "pk": 500.0,
-          "label": "500-g-Packg."
+        "karotten": {
+          "product": "Bioland dtsch. Möhren",
+          "price": 1.49,
+          "pk": 1000.0,
+          "label": "1-kg-Beutel"
         },
-        "haehnchen": {
-          "product": "K-PURLAND Hähnchenbrust-Innenfilet",
-          "price": 3.79,
+        "gurke": {
+          "product": "Span. Bio-Gurke",
+          "price": 0.99,
+          "pk": 1.0,
+          "label": "Stück"
+        },
+        "hack": {
+          "product": "K-PURLAND Puten-Hackfleisch",
+          "price": 2.29,
           "pk": 400.0,
           "label": "400-g-Packg."
         },
-        "schwein": {
-          "product": "K-WERTSCHÄTZE Schweineschnitzel",
-          "price": 0.79,
+        "rinderhack": {
+          "product": "K-WERTSCHÄTZE Rinderhackfleisch vom Jungbullen",
+          "price": 1.19,
           "pk": 100.0,
           "label": "100 g"
         },
-        "hack": {
-          "product": "K-WERTSCHÄTZE Hackfleisch gemischt von Schwein und Rind",
-          "price": 0.99,
-          "pk": 100.0,
-          "label": "100 g"
-        },
-        "lachs": {
-          "product": "K-BLUE BAY Norweg. Lachsfilet-Portionen XXL",
-          "price": 15.99,
-          "pk": 1000.0,
-          "label": "8 St. = 1-kg-Großpackg."
-        },
-        "frischkaese": {
-          "product": "MILRAM Körniger Frischkäse XXL",
-          "price": 2.0,
+        "mozzarella": {
+          "product": "K-CLASSIC Back-Camembert oder Mozzarella-Sticks",
+          "price": 2.49,
           "pk": 350.0,
-          "label": "350-g-Becher"
+          "label": "300 - 350-g-Packg."
         },
-        "tommark": {
-          "product": "K-CLASSIC Tomatenmark",
-          "price": 0.79,
-          "pk": 200.0,
-          "label": "200-g-Tube"
+        "gouda": {
+          "product": "FERDI FUCHS Cheese-Sticks/Gouda-Scheiben",
+          "price": 1.49,
+          "pk": 80.0,
+          "label": "80-g-Packg."
         },
-        "erbsen": {
-          "product": "K-CLASSIC Junge Erbsen mit Möhrchen",
-          "price": 1.39,
-          "pk": 800.0,
-          "label": "800-g-Dose"
-        },
-        "tomdose": {
-          "product": "MUTTI Passierte Tomaten",
-          "price": 2.0,
-          "pk": 600.0,
-          "label": "3 x 200-g-Packg. oder 700-g-Fl."
-        },
-        "thunfisch": {
-          "product": "DEUTSCHE SEE Thunfisch",
-          "price": 2.0,
-          "pk": 160.0,
-          "label": "115 - 185- oder 2 x 80-g-Dose"
+        "parmesan": {
+          "product": "K-GOLD EDITION Grana Padano DOP, gerieben",
+          "price": 2.59,
+          "pk": 150.0,
+          "label": "150-g-Packg."
         },
         "oel": {
-          "product": "K-CLASSIC Rapsöl",
-          "price": 1.11,
-          "pk": 1000.0,
-          "label": "1-l-Fl."
-        },
-        "bruehe": {
-          "product": "MAGGI Gemüsebrühe",
-          "price": 2.79,
-          "pk": 288.0,
-          "label": "288-g-Packg."
-        },
-        "feta": {
-          "product": "SALAKIS Schafskäse oder Feta",
-          "price": 1.99,
-          "pk": 180.0,
-          "label": "150 - 180-g-Packg."
+          "product": "BRÄNDLE Vita-Rapsöl oder BIOVIT Bio-Sonnenblumenöl",
+          "price": 2.49,
+          "pk": 750.0,
+          "label": "500 - 750-ml-Fl."
         }
       }
     },
     "rewe": {
       "name": "Rewe",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "fehlt",
       "source": "https://www.rewe.de/angebote",
       "items": {},
@@ -254,8 +152,8 @@
     },
     "edeka": {
       "name": "Edeka",
-      "validFrom": "2026-11-02",
-      "validTo": "2026-11-07",
+      "validFrom": "2026-11-09",
+      "validTo": "2026-11-14",
       "status": "fehlt",
       "source": "https://www.edeka.de/eh/marktangebote.jsp",
       "items": {},
