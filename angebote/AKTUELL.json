@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW45",
-  "stand": "2026-11-08",
+  "kw": "2026-KW46",
+  "stand": "2026-11-12",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -137,6 +137,18 @@
           "price": 2.49,
           "pk": 750.0,
           "label": "500 - 750-ml-Fl."
+        },
+        "spinat": {
+          "product": "IGLO Rahm-Spinat",
+          "price": 1.69,
+          "pk": 500.0,
+          "label": "500-g-Packg."
+        },
+        "blumenkohl": {
+          "product": "Dtsch./niederl. Blumenkohl, lose",
+          "price": 1.49,
+          "pk": 1.0,
+          "label": "Stück"
         }
       }
     },
