@@ -1,6 +1,6 @@
 {
-  "kw": "2026-KW47",
-  "stand": "2026-11-22",
+  "kw": "2026-KW48",
+  "stand": "2026-11-26",
   "ort": "Münster (48145)",
   "hinweis": "pk = Packungsgröße in der Einheit der Zutat aus dem Planer (g, ml, Stk, Zehe, Bund). Nur Angebote, die zu Planer-Zutaten passen. Automatisch erzeugt (scraper/main.py), ohne LLM. Fehlende Märkte (lidl, penny, netto, rewe, edeka) nutzen Schätzpreise.",
   "stores": {
@@ -22,6 +22,12 @@
           "price": 1.79,
           "pk": 1500.0,
           "label": "1,5-kg-Beutel"
+        },
+        "karotten": {
+          "product": "Möhren-Mix",
+          "price": 0.99,
+          "pk": 750.0,
+          "label": "750-g-Schale"
         },
         "rinderhack": {
           "product": "Rinderhackfleisch XXL",
@@ -116,7 +122,7 @@
       "items": {
         "butter": {
           "product": "WEIHENSTEPHAN Butter oder Die Streichzarte",
-          "price": 1.29,
+          "price": 1.19,
           "pk": 250.0,
           "label": "250-g-Packg."
         },
@@ -131,6 +137,12 @@
           "price": 2.29,
           "pk": 350.0,
           "label": "350-g-Packg."
+        },
+        "gnocchi": {
+          "product": "GIOVANNI RANA Pfannen-Gnocchi",
+          "price": 1.99,
+          "pk": 300.0,
+          "label": "280 - 300-g-Packg."
         },
         "zwiebeln": {
           "product": "Dtsch./niederl. Zwiebeln, rot",
@@ -181,10 +193,10 @@
           "label": "1-l-Fl."
         },
         "quark": {
-          "product": "QUARKI Quark",
-          "price": 1.59,
+          "product": "K-BIO Bioland Speisequark Magerstufe",
+          "price": 0.79,
           "pk": 250.0,
-          "label": "250-g-Packg."
+          "label": "250-g-Becher"
         },
         "gouda": {
           "product": "K-CLASSIC Gouda jung",
@@ -193,10 +205,10 @@
           "label": "450-g-Stück"
         },
         "mozzarella": {
-          "product": "GALBANI Mozzarella Fior di latte",
-          "price": 1.79,
-          "pk": 150.0,
-          "label": "150-g-Packg."
+          "product": "K-BIO Bioland Mozzarella",
+          "price": 0.99,
+          "pk": 200.0,
+          "label": "200-g-Beutel"
         },
         "mais": {
           "product": "SUNTAT Mais",
@@ -215,6 +227,12 @@
           "price": 1.49,
           "pk": 110.0,
           "label": "95 - 110-g-Packg."
+        },
+        "hack": {
+          "product": "K-BIO Bioland Hackfleisch gemischt",
+          "price": 5.19,
+          "pk": 400.0,
+          "label": "400-g-Packg."
         }
       }
     },
